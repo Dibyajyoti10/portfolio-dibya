@@ -1,0 +1,69 @@
+/* Retro Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-neon-pink: #ff2a6d;
+  --color-neon-cyan: #05d9e8;
+  --color-neon-purple: #d23eff;
+  --color-retro-bg: #1a1a2e; /* Slightly lighter deep blue/purple */
+  --color-retro-bg-dark: #050505;
+
+  --font-display: "Press Start 2P", cursive;
+  --font-body: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-retro-bg-dark text-white font-body selection:bg-neon-pink selection:text-white overflow-x-hidden;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-retro-bg-dark;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neon-purple/50 rounded-full hover:bg-neon-purple;
+  }
+}
+
+@layer utilities {
+  .text-glow-pink {
+    text-shadow: 0 0 10px rgba(255, 42, 109, 0.7), 0 0 20px rgba(255, 42, 109, 0.5);
+  }
+  .text-glow-cyan {
+    text-shadow: 0 0 10px rgba(5, 217, 232, 0.7), 0 0 20px rgba(5, 217, 232, 0.5);
+  }
+  .box-glow {
+    box-shadow: 0 0 15px rgba(5, 217, 232, 0.4);
+  }
+  .grid-bg {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(5, 217, 232, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(5, 217, 232, 0.05) 1px, transparent 1px);
+  }
+}
+
+@layer utilities {
+  @keyframes scanline {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+  }
+  .animate-scanline {
+    animation: scanline 8s linear infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  .typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end);
+  }
+}
