@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-neon-purple/50 to-transparent" />
       
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="font-display text-2xl md:text-3xl text-white mb-8 text-glow-cyan">
+        <h2 className="font-display text-lg md:text-3xl text-white mb-8 text-glow-cyan">
           LET'S BUILD THE FUTURE
         </h2>
         

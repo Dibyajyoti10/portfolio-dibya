@@ -30,15 +30,15 @@ const NavItem = ({ icon: Icon, label, href }) => {
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full h-20 border-b border-white/10 bg-retro-bg-dark/90 backdrop-blur-md z-50 flex items-center justify-between px-6 md:px-12">
-      <div className="flex items-center gap-4">
-        <h1 className="font-display text-xl md:text-2xl text-neon-pink text-glow-pink cursor-pointer">
+    <nav className="fixed top-0 left-0 w-full h-16 md:h-20 border-b border-white/10 bg-retro-bg-dark/90 backdrop-blur-md z-50 flex items-center justify-between px-4 md:px-12">
+      <div className="flex items-center gap-4 shrink-0">
+        <h1 className="font-display text-lg md:text-2xl text-neon-pink text-glow-pink cursor-pointer">
           PORTFOLIO
         </h1>
         <div className="h-6 w-1 bg-neon-cyan hidden md:block" />
       </div>
 
-      <div className="flex items-center gap-2 md:gap-6">
+      <div className="flex items-center gap-2 md:gap-6 overflow-x-auto no-scrollbar scroll-smooth">
         <NavItem icon={Terminal} label="HOME" href="#hero" />
         <NavItem icon={User} label="ABOUT" href="#about" />
         <NavItem icon={Code} label="PROJECTS" href="#projects" />

@@ -118,7 +118,7 @@ const ProjectCard = ({ project }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-6 md:px-12 relative bg-retro-bg-dark/50">
+    <section id="projects" className="py-20 px-4 md:px-12 relative bg-retro-bg-dark/50">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -126,7 +126,7 @@ const Projects = () => {
           viewport={{ once: true }}
           className="mb-16 flex items-end gap-4"
         >
-          <h2 className="text-3xl md:text-5xl font-display text-white">
+          <h2 className="text-xl md:text-5xl font-display text-white">
             SELECTED_WORKS
           </h2>
           <div className="h-1 flex-1 bg-white/10 mb-2 relative overflow-hidden">

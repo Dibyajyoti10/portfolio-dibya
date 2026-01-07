@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const AnimatedBox = ({ imageSrc, altText }) => {
   return (
-    <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto mt-10 md:mt-0 group">
+    <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 mx-auto mt-10 md:mt-0 group">
       {/* Central Image Container */}
       <div className="relative z-20 w-full h-full p-2 bg-retro-bg border-2 border-neon-cyan overflow-hidden rounded-sm box-glow">
         <motion.div
