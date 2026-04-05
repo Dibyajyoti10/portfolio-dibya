@@ -3,9 +3,11 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import AnimatedBox from './AnimatedBox';
 
+
 const Hero = () => {
   // Placeholder image - user can replace this
-  const placeholderImage = "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
+  // const placeholderImage = "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
+  const placeholderImage = "src/assets/me_formal.jpg";
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center p-4 md:p-8 relative overflow-hidden grid-bg pt-20 md:pt-0">

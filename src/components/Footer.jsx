@@ -1,6 +1,21 @@
 import React from 'react';
 import { Github, Twitter, Linkedin, Heart } from 'lucide-react';
 
+const socialLinks = [
+  {
+    icon: Github,
+    url: "https://github.com/Dibyajyoti10"
+  },
+  {
+    icon: Twitter,
+    url: "https://x.com/rautaray1010"
+  },
+  {
+    icon: Linkedin,
+    url: "https://www.linkedin.com/in/dibyajyoti-rautaray-4556902b6/"
+  },
+];
+
 const Footer = () => {
   return (
     <footer id="contact" className="py-12 bg-black border-t border-white/10 relative overflow-hidden">
@@ -13,10 +28,12 @@ const Footer = () => {
         </h2>
         
         <div className="flex justify-center gap-8 mb-12">
-          {[Github, Twitter, Linkedin].map((Icon, i) => (
+          {socialLinks.map(({ icon: Icon, url }, i) => (
             <a
               key={i}
-              href="#"
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 border border-white/10 rounded-full hover:bg-neon-pink hover:border-neon-pink hover:text-black transition-all duration-300 group"
             >
               <Icon size={20} className="group-hover:scale-110 transition-transform" />

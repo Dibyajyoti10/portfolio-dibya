@@ -5,24 +5,42 @@ import { Briefcase, Calendar } from 'lucide-react';
 const experiences = [
   {
     id: 1,
-    role: "Senior Frontend Engineer",
-    company: "TechNova Systems",
-    period: "2023 - PRESENT",
-    description: "Leading the frontend architecture for next-gen SaaS platforms. Implemented micro-frontends and improved performance by 40%."
+    role: "Graduate Engineer Trainee",
+    company: "Coforge",
+    period: "2026-PRESENT",
+    description: "Currently working as a Graduate Engineer Trainee at Coforge, gaining hands-on experience in software development and contributing to various real-life projects across different domains."
   },
   {
     id: 2,
-    role: "Creative Developer",
-    company: "PixelPerfect Studios",
-    period: "2021 - 2023",
-    description: "Crafted award-winning interactive websites using WebGL and GSAP. Collaborated closely with designers to bring concepts to life."
+    role: "Senior Frontend Engineer",
+    company: "TechNova Systems",
+    period: "2025 - 2026",
+    description: "Leading the frontend architecture for next-gen SaaS platforms. Implemented micro-frontends and improved performance by 40%."
+    
   },
   {
     id: 3,
+    role: "Creative Developer",
+    company: "PixelPerfect Studios",
+    period: "2024 - 2025",
+    description: "Crafted award-winning interactive websites using WebGL and GSAP. Collaborated closely with designers to bring concepts to life."
+    
+  },
+  {
+    id: 4,
     role: "Full Stack Developer",
     company: "InnovateX",
-    period: "2019 - 2021",
+    period: "2023 - 2024",
     description: "Built scalable APIs and responsive UIs for fintech startups. Mentored junior developers and established code quality standards."
+    
+  },
+  {
+    id: 5,
+    role: "Game Developer Intern",
+    company: "ArcadeLabs",
+    period: "2023 - 2024",
+    description: "Assisted in developing indie games using Unity. Focused on gameplay mechanics and user experience enhancements."
+    
   }
 ];
 
