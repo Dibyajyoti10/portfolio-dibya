@@ -38,7 +38,7 @@ const experiences = [
     id: 5,
     role: "Game Developer Intern",
     company: "ArcadeLabs",
-    period: "2023 - 2024",
+    period: "2022 - 2023",
     description: "Assisted in developing indie games using Unity. Focused on gameplay mechanics and user experience enhancements."
     
   }
