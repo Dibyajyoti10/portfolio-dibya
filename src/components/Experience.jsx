@@ -12,7 +12,7 @@ const experiences = [
   },
   {
     id: 2,
-    role: "Senior Frontend Engineer",
+    role: "Frontend Developer Intern",
     company: "TechNova Systems",
     period: "2025 - 2026",
     description: "Leading the frontend architecture for next-gen SaaS platforms. Implemented micro-frontends and improved performance by 40%."
